@@ -38,6 +38,10 @@ footer {
     text-align: center;
 }
 
+footer p {
+    margin: 0;
+}
+
 /* button */
 
 button {
@@ -72,6 +76,7 @@ button {
 .button-violet:hover, .button-violet:active { background-color: white; color: #BB7ECF; }
 .button-grey { border: 2px solid dimgrey; background-color: dimgrey; color: white; }
 .button-grey:hover, .button-grey:active { background-color: white; color: dimgrey; }
+.brown { color: #a35022; }
 
 /* text */
 
