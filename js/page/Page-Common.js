@@ -7,11 +7,19 @@ function Header() {
 
 function Footer() {
   $("body").append($('<footer>'));
-  $('footer').append($('<p>', { text: 'Tiers from this '} ));
-  $('footer p').append($('<a>', {
+  let $footer = $('footer');
+  let tiersCredit = $('<p>', { text: 'Tiers from '} );
+  tiersCredit.append($('<a>', {
     href: 'https://infinite.tcgplayer.com/article/The-Archazia-s-Island-Booster-Draft-And-Sealed-Deck-Tier-List/0cddbc37-0e6b-4384-b605-84bdad57ad86',
-    text: 'TCGPlayer Article',
+    text: 'TCGPlayer article',
     class: 'indigo'
   }));
+  $footer.append(tiersCredit);
 
+  let supportDev = $('<p>', { text: 'Support the dev: '} );
+  supportDev.append($('<a>', {
+    text: 'Buy Me A Coffee',
+    class: 'brown',
+    href: 'https://buymeacoffee.com/lushirls' } ));
+  $footer.append(supportDev);
 }
