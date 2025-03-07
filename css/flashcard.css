@@ -7,7 +7,6 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
     height: 40px;
     padding: 1px 0;
 }
@@ -84,7 +83,7 @@
 /* #lower-buttons */
 
 #lower-buttons {
-    height: 118px;
+    height: 106px;
 }
 
 #decision-or-answer {
@@ -101,7 +100,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 /* #decision button */
@@ -123,6 +122,14 @@
     text-transform: lowercase;
     font-size: 15px;
     line-height: 15px;
+}
+
+#actions button {
+    font-size: 18px;
+    line-height: 18px;
+    width: 64px;
+    height: 32px;
+    padding: 4px 12px;
 }
 
 #answer {
