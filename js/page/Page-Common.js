@@ -12,6 +12,7 @@ function Footer() {
   tiersCredit.append($('<a>', {
     href: 'https://infinite.tcgplayer.com/article/The-Archazia-s-Island-Booster-Draft-And-Sealed-Deck-Tier-List/0cddbc37-0e6b-4384-b605-84bdad57ad86',
     text: 'TCGPlayer article',
+    target: "_blank",
     class: 'indigo'
   }));
   $footer.append(tiersCredit);
@@ -20,6 +21,7 @@ function Footer() {
   supportDev.append($('<a>', {
     text: 'Buy Me A Coffee',
     class: 'brown',
+    target: "_blank",
     href: 'https://buymeacoffee.com/lushirls' } ));
   $footer.append(supportDev);
 }
