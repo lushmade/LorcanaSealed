@@ -56,13 +56,15 @@ function Pick() {
 function MapTier(tier) {
   switch (tier) {
     case "B+":
+      return "A";
     case "B":
     case "B-":
       return "B";
     case "C+":
     case "C":
-    case "C-":
       return "C";
+    case "C-":
+      return "D";
     default:
       return tier;
   }
