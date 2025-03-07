@@ -19,7 +19,6 @@
 /* #card */
 
 #card {
-    margin-top: 20px;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
@@ -85,7 +84,7 @@
 /* #lower-buttons */
 
 #lower-buttons {
-    height: 128px;
+    height: 118px;
 }
 
 #decision-or-answer {
@@ -102,7 +101,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* #decision button */
