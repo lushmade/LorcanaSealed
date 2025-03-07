@@ -1,0 +1,88 @@
+@import url("./common.css");
+
+#cards{
+    display: none;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(auto-fill, 280px);
+    gap: 10px;
+}
+#reveal {
+    display: none;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(auto-fill, 280px);
+    gap: 10px;
+}
+.booster-card-image {
+    width: 200px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.foil-overlay {
+    position: absolute;
+    z-index: 2;
+    width: 200px;
+    height: 280px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.booster-card-decision {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    width: 120px;
+    height: 120px;
+    border: 10px solid;
+    border-radius: 60px;
+
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 14px 40px;
+
+    background-color: rgba(255,255,255,0.75);
+}
+
+.booster-card-decision.avoid {
+    border-color: #C25F6F;
+    color: #C25F6F;
+}
+.booster-card-decision.keep {
+    border-color: #8EBD79;
+    color: #8EBD79;
+}
+.booster-card-decision.maybe {
+    border-color: #cdb65a;
+    color: #cdb65a;
+}
+
+#stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    padding: 1px 0;
+}
+.stats-text {
+    font-size: 24px;
+}
+
+.booster-reveal-border {
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    box-sizing: border-box;
+}

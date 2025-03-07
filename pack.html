@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Lorcana Draft & Sealed Tier Trainer</title>
+  <!-- Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!--  Scripts  -->
+  <script src="js/src/BoosterPack.js"></script>
+  <script src="js/data/Lorcast.js"></script>
+  <script src="js/data/SetSevenCardTiers.js"></script>
+  <script src="js/dom/MakeActionButtons.js"></script>
+  <script src="js/dom/MakeCardOverlay.js"></script>
+  <script src="js/dom/MakeTierButtons.js"></script>
+  <script src="js/page/Page-Common.js"></script>
+  <script src="js/page/Page-Pack.js"></script>
+  <!--  Styles  -->
+  <link rel="stylesheet" href="css/pack.css">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+</head>
+<body>
+<div id="container">
+  <div id="stats" class="green">
+    <div class="stats-text">Packs opened: </div>
+    <div id="opened-packs" class="stats-text">0</div>
+  </div>
+  <div id="cards"></div>
+  <div id="reveal"></div>
+  <div id="lower-buttons">
+    <div id="actions"></div>
+  </div>
+</div>
+</body>
+</html>

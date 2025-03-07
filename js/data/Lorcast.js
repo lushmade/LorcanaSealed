@@ -1,6 +1,21 @@
 let SetSevenCards = {}
+let SetSevenCardsBucketed = {
+  "Common": {
+    "Amber": [],
+    "Amethyst": [],
+    "Emerald": [],
+    "Ruby": [],
+    "Sapphire": [],
+    "Steel": [],
+    "All": []
+  },
+  "Uncommon": [],
+  "Rare": [],
+  "Super_rare": [],
+  "Legendary": []
+}
 
-function FetchFromLorcast() {
+function FetchFromLorcast(callback) {
   fetch('https://api.lorcast.com/v0/cards/search?q=set:7')
     .then(response => {
       if (!response.ok) {
@@ -17,12 +32,23 @@ function FetchFromLorcast() {
         }
         SetSevenCards[card["collector_number"]] = card
       }
-      for (let tier_card of SetSevenTiers) {
-        let card_num = tier_card["CardNo"]
-        let card = SetSevenCards[card_num]
+      for (let tier_card of SetSevenCardTiers) {
+        let cardNum = tier_card["CardNo"]
+        let card = SetSevenCards[cardNum]
         card["tier"] = tier_card["Tier"]
       }
-      ResetActionButtons()
+      for (let cardNum of Object.keys(SetSevenCards)) {
+        let card = SetSevenCards[cardNum]
+        let rarity = card.rarity;
+        if (rarity === "Common") {
+          let ink = card.ink;
+          SetSevenCardsBucketed[rarity][ink].push(card);
+          SetSevenCardsBucketed[rarity]["All"].push(card);
+        } else {
+          SetSevenCardsBucketed[rarity].push(card)
+        }
+      }
+      callback()
     })
     .catch(error => {
       console.error('There was a problem with the fetch operation:', error);
