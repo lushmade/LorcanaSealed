@@ -76,7 +76,7 @@ function Judge(selectedTier) {
     "B": "orange",
     "C": "yellow",
     "D": "blue",
-    "F": "violet"
+    "F": "indigo"
   }
 
   let $card = $("#card-image");

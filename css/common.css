@@ -21,19 +21,20 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
+    height: 100vh;
     font-family: "Atma";
 }
 
 #container {
     max-width: 600px;
     width: 100%;
-    margin: 0 auto;
+    margin: 12px auto;
 }
 
 footer {
     max-width: 1000px;
     width: 100%;
-    margin: 10px auto;
+    margin: 10px auto 0px auto;
     text-align: center;
 }
 

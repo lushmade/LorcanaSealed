@@ -2,7 +2,7 @@
 function Header() {
   $("body").prepend($('<header>'));
   $('header').append($('<h1>'));
-  $('header h1').append($('<a>', { href: 'index.html', text: 'Lorcana Draft & Sealed Tier Trainer' }));
+  $('header h1').append($('<a>', { class: 'violet', href: 'index.html', text: 'Lorcana Draft & Sealed Tier Trainer' }));
 }
 
 function Footer() {
