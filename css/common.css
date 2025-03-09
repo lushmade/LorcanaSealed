@@ -21,12 +21,11 @@ body {
     flex-direction: column;
     justify-content: center;
     margin: 0;
-    height: 100vh;
     font-family: "Atma";
 }
 
 #container {
-    max-width: 600px;
+    max-width: 620px;
     width: 100%;
     margin: 12px auto;
 }
@@ -57,24 +56,31 @@ button {
     line-height: 24px;
 }
 .red { color: #C25F6F; }
+.border-red { border: 8px solid #C25F6F; }
 .button-red { border: 2px solid #C25F6F; background-color: #C25F6F; color: white; }
 .button-red:hover, .button-red:active { background-color: white; color: #C25F6F; }
 .orange { color: #D9996D; }
+.border-orange { border: 8px solid #D9996D; }
 .button-orange { border: 2px solid #D9996D; background-color: #D9996D; color: white; }
 .button-orange:hover, .button-orange-red:active { background-color: white; color: #D9996D; }
 .yellow { color: #cdb65a; }
+.border-yellow { border: 8px solid #cdb65a; }
 .button-yellow { border: 2px solid #cdb65a; background-color: #cdb65a; color: white; }
 .button-yellow:hover, .button-yellow:active { background-color: white; color: #cdb65a; }
 .green { color: #8EBD79; }
+.border-green { border: 8px solid #8EBD79; }
 .button-green { border: 2px solid #8EBD79; background-color: #8EBD79; color: white; }
 .button-green:hover, .button-green:active { background-color: white; color: #8EBD79; }
 .blue { color: #729BC4; }
+.border-blue { border: 8px solid #729BC4; }
 .button-blue { border: 2px solid #729BC4; background-color: #729BC4; color: white; }
 .button-blue:hover, .button-blue:active { background-color: white; color: #729BC4; }
 .indigo { color: #7A71BD; }
+.border-indigo { border: 8px solid #7A71BD; }
 .button-indigo { border: 2px solid #7A71BD; background-color: #7A71BD; color: white; }
 .button-indigo:hover, .button-indigo:active { background-color: white; color: #7A71BD; }
 .violet { color: #BB7ECF; }
+.border-violet { border: 8px solid #BB7ECF; }
 .button-violet { border: 2px solid #BB7ECF; background-color: #BB7ECF; color: white; }
 .button-violet:hover, .button-violet:active { background-color: white; color: #BB7ECF; }
 .button-grey { border: 2px solid dimgrey; background-color: dimgrey; color: white; }

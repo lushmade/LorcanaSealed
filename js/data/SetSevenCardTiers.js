@@ -1,4 +1,4 @@
-let SetSevenTiers = [
+let SetSevenCardTiers = [
   {
     "SetNo": 7,
     "CardNo": 1,

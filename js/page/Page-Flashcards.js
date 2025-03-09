@@ -2,5 +2,5 @@ window.onload = function() {
   Header()
   Footer()
 
-  FetchFromLorcast()
+  FetchFromLorcast(function() { ResetActionButtons() })
 }
